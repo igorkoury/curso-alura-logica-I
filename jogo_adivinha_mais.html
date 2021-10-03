@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<h1>Adivinhe o número:</h1>
+<p>Dica: O número está entre 1 e 10</p>
+
+<input>
+<button>Verificar</button>
+
+
+<script type="text/javascript">
+
+	var numero = Math.round(Math.random()*10);
+	var input = document.querySelector("input");
+	input.focus();
+	console.log(numero);
+
+
+	function verificar() {
+
+		if(input.value == numero) {
+			alert("Você ACERTOU")
+		} else {
+			alert("Você ERROU")
+		}
+
+		input.value = "";
+		input.focus();
+	}
+
+
+	var button = document.querySelector("button");
+	button.onclick = verificar;
+
+</script>
+
+988976431

@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+
+<script>
+	
+		function pulaLinha() {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+
+	function imprime(text) {
+
+		document.write(text);
+		pulaLinha();
+	}
+
+	var numeroPensado = Math.round(Math.random() * 10);
+	console.log(numeroPensado);
+	
+	//Pergunta ao usuário
+	var palpite = parseInt(prompt("Qual seu palpite? "))
+
+	function resultado(palpite) {
+
+		if(palpite == numeroPensado) {
+			imprime("Parabéns, você acertou!");
+
+		} 
+
+		else {
+
+			imprime("Você errou o chute!");
+		}
+	}
+
+	//programa rincipal
+	imprime("O numero pensado foi " + numeroPensado + ".");
+	resultado(palpite);
+
+
+
+
+</script>

@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<h1>Usando Arrays</h1>
+
+<p>Adivinhe o número</p>
+
+<input>
+<button>Check</button>
+
+
+<script type="text/javascript">
+
+var numeros = [5, 7, 10, 2];
+
+var input = document.querySelector("input");
+input.focus();
+
+function verifica() {
+
+	for (var i = 0; i < numeros.length; i++) {
+		
+		if(input.value == numeros[i]) {
+
+			alert("Acertou!");
+		} else {
+			alert("Eroou!");
+		}
+	}
+}
+
+button.onclick = verifica;
+
+input.value = "";
+input.focus();
+
+</script>
